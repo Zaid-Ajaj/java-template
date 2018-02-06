@@ -5,8 +5,8 @@ public class Tester
 {
     public static void main(String[] args)
     {
-        System.out.println("Tests are up and running...");
-        
+        System.out.println("Util Tests");
+
         Test("Sum of empty list is zero", () -> 
         {   
             List<Integer> emptyList = new ArrayList<Integer>();
@@ -27,7 +27,7 @@ public class Tester
     }
 
 
-    public static void Test(String testName, Runnable expresstion)
+    static void Test(String testName, Runnable expresstion)
     {
         try 
         {
@@ -46,7 +46,7 @@ public class Tester
     }
 
 
-    public static <T extends Comparable<T>> void AreEqual(T x, T y, String msg)
+    static <T extends Comparable<T>> void AreEqual(T x, T y, String msg)
     {
         if (x.compareTo(y) != 0) 
         { 
@@ -54,7 +54,7 @@ public class Tester
         }
     }
 
-    public static <T extends Comparable<T>> void AreEqual(T x, T y)
+    static <T extends Comparable<T>> void AreEqual(T x, T y)
     {
         if (x.compareTo(y) != 0) 
         {
