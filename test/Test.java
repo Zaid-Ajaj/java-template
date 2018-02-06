@@ -53,9 +53,7 @@ public class Test
                     System.out.println("    × At Line: " + errorLine); 
                 }
             }
-        }
-
-        System.out.println();        
+        }    
     }
 
     public static <T extends Comparable<T>> void AreEqual(T x, T y, String msg)
