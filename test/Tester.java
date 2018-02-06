@@ -22,7 +22,7 @@ public class Tester
                 numbers.add(i);
             }
             int sum = Util.Sum(numbers);
-            AreEqual(55, sum);
+            AreEqual(55, sum, "The sum is correct");
         });
     }
 
@@ -50,7 +50,7 @@ public class Tester
     {
         if (x.compareTo(y) != 0) 
         { 
-            throw new Error("Expected " + x + " but got " + y + "\n" + msg);
+            throw new Error("\n * Expected " + x + " but got " + y + "\n * " + msg + " \n");
         }
     }
 
