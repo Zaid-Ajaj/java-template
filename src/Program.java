@@ -13,6 +13,6 @@ public class Program
         
         int result = Util.Sum(numbers);
 
-        System.out.println("Sum is = " + result);
+        System.out.println("Sum = " + result);
     }
 }
